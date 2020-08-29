@@ -111,10 +111,6 @@ export class AppComponent {
   ];
 
   checkWindowIndex(index) {
-    console.log({
-      currentPage: this.currentPage,
-      index: index,
-    });
     return Math.abs(this.currentPage - index) < 5;
   }
 }

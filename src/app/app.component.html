@@ -18,7 +18,13 @@
   </ul>
 </nav>
 
-<div>
+<!-- <div>
   <h4>{{ images[currentPage].title }}</h4>
   <img [src]="images[currentPage].url" />
+</div> -->
+
+<div [ngSwitch]="currentPage">
+  <div *ngSwitchCase="0">Hello</div>
+  <div *ngSwitchCase="1">1Hello</div>
+  <div *ngSwitchDefault>Default</div>
 </div>
