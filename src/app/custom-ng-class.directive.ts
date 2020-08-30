@@ -8,7 +8,10 @@ export class CustomNgClassDirective {
   constructor(private element: ElementRef) {}
 
   // element.nativeElement: actual HTML element we applied the directive to
-  @Input() set backgroundColor(color: string) {
+  // @Input() set appCustomNgClass(color: string) {
+  //   this.element.nativeElement.style.backgroundColor = color;
+  // }
+  @Input('appCustomNgClass') set backgroundColor(color: string) {
     this.element.nativeElement.style.backgroundColor = color;
   }
 }
