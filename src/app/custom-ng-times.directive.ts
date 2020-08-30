@@ -20,7 +20,10 @@ export class CustomNgTimesDirective {
     for (let i = 0; i < times; i++) {
       // create HTML inside of the viewContainer from scratch:
       // The HTML to be put inside the viewContainer is provided by the templateRef(templateRef is a reference to the elements "inside" the HTML element we applied the directive to)
-      this.viewContainer.createEmbeddedView(this.templateRef, {});
+      this.viewContainer.createEmbeddedView(this.templateRef, {
+        // this object is called the context object
+        index: i,
+      });
     }
   }
 }
