@@ -12,7 +12,7 @@
         <a class="page-link" (click)="currentPage = i">{{ i + 1 }}</a>
       </li>
     </ng-container>
-    <li class="page-item" [appCustomNgClass]="{ disabled: currentPage === 3 }">
+    <li class="page-item" [appCustomNgClass]="{ disabled: currentPage === 19 }">
       <a class="page-link" (click)="currentPage = currentPage + 1">Next</a>
     </li>
   </ul>
@@ -30,3 +30,7 @@
   <div *ngSwitchCase="1">1Hello</div>
   <div *ngSwitchDefault>Default</div>
 </div> -->
+
+<ul *appCustomNgTimes="4">
+  <li>Hello</li>
+</ul>

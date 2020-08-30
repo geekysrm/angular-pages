@@ -1,3 +1,5 @@
+// Custom attribute directive
+
 import { Directive, ElementRef, Input } from '@angular/core';
 
 // Make use of this directive using the word "appCustomNgClass" as an attribute to a HTML element
